@@ -1,0 +1,19 @@
+import pandas as pd
+
+# Load the CSV file
+df = pd.read_csv('GGS_new.csv')
+
+# Filter data by sex column (1 = male, 2 = female)
+male_events = df[df['sex'] == 1]
+female_events = df[df['sex'] == 2]
+
+# Generate statistics (e.g., count of events for males and females)
+male_count = male_events['event_column'].count()  # Adjust the column name
+female_count = female_events['event_column'].count()
+
+# Now, use matplotlib to generate a bar chart
+import matplotlib.pyplot as plt
+
+plt.bar(['Male', 'Female'], [male_count, female_count])
+plt.title('Events by Gender')
+plt.show()
