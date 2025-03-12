@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bullet Journal</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>My Bullet Journal</h1>
+            <nav>
+                <ul>
+                    <li><a href="#daily-tasks">Daily Tasks</a></li>
+                    <li><a href="#calendar">Calendar</a></li>
+                    <li><a href="#notes">Notes</a></li>
+                    <li><a href="#login" class="login-btn">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <header>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Bullet Journal</title>
+            <link rel="stylesheet" href="styles.css">
+            <!-- FullCalendar Stylesheet -->
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.2.0/fullcalendar.min.css" rel="stylesheet" />
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Daily Tasks Section -->
+        <section id="daily-tasks">
+            <div class="container">
+                <h2>Daily Tasks</h2>
+                <ul id="tasks-list">
+                    <li><input type="checkbox" id="task1"> Task 1</li>
+                    <li><input type="checkbox" id="task2"> Task 2</li>
+                </ul>
+                <input type="text" id="new-task" placeholder="Add new task">
+                <button onclick="addTask()">Add Task</button>
+            </div>
+        </section>
+
+        <!-- Calendar Section -->
+        <section>
+
+        <div class="container">
+            <h2>2025 Calendar</h2>
+            <div id="calendar-container">
+                <div id="month-year"></div>
+                <table id="calendar-table">
+                    <thead>
+                        <tr>
+                            <th>Sun</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                        </tr>
+                    </thead>
+                    <tbody id="calendar-body"></tbody>
+                </table>
+            </div>
+        </div>
+</section>
+
+        <!-- Notes Section -->
+        <section id="notes">
+            <div class="container">
+                <h2>Notes</h2>
+                <textarea id="notes-text" rows="10" cols="30" placeholder="Write your notes here"></textarea>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Bullet Journal - Your personal planner</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.2.0/fullcalendar.min.js"></script>
+    <script src="script.js"></script>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
